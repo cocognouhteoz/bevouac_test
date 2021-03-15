@@ -1,0 +1,9 @@
+<h1>Companies List</h1>
+
+<ul class="companyList" *ngIf="companies">
+  <li class="companyItem" *ngFor="let company of companies">
+    <p class="first">Name: {{ company.name }}</p>
+    <p class="last">Adress: {{ company.address }}</p>
+    <p class="balance">Start: {{ company.stars }}</p>
+  </li>
+</ul>
